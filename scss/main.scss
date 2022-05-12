@@ -1,6 +1,22 @@
+// BOOTSTRAP OVERRIDE
+
 $primary: #5265e1;
 $secondary: #fa5959;
+$dark: rgb(22, 22, 72);
 $enable-shadows: true;
+
+$nav-link-hover-color: $secondary !important;
+$nav-link-focus-color: black !important ;
+
+$accordion-border-color: rgba(255, 255, 255, 0);
+$accordion-button-active-bg: rgba(255, 255, 255, 0);
+$accordion-button-active-color: black;
+$accordion-icon-color: black;
+$accordion-icon-active-color: $secondary;
+$accordion-button-focus-border-color: rgba(255, 255, 255, 0);
+
+$nav-pills-link-active-color: black;
+$nav-pills-link-active-bg: rgba(0, 0, 0, 0);
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
@@ -11,3 +27,10 @@ $enable-shadows: true;
 section {
   margin-top: 100px;
 }
+
+.btn-primary {
+  @extend .bg-primary;
+  @extend .text-white;
+}
+
+/* Feature Tabs CSS */
