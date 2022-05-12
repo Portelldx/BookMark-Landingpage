@@ -1,0 +1,13 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$enable-shadows: true;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: 100px;
+}
