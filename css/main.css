@@ -5366,14 +5366,14 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: black;
-  background-color: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0);
-          box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0);
+  color: #4a5bcb;
+  background-color: #eef0fc;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa5959'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a5bcb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -5385,7 +5385,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -5407,7 +5407,7 @@ fieldset:disabled .btn {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: rgba(255, 255, 255, 0);
+  border-color: #a9b2f0;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
@@ -5419,7 +5419,7 @@ fieldset:disabled .btn {
 
 .accordion-item {
   background-color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .accordion-item:first-of-type {
@@ -12023,13 +12023,19 @@ fieldset:disabled .btn {
   }
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.img-hero {
+  border-radius: 170px 0px 0px 170px;
+  background: #5265e1;
+  height: 60%;
+  width: 100%;
+  position: relative;
+  top: -60%;
+  right: -23%;
+  z-index: -1;
 }
 
-section {
-  margin-top: 100px;
+.logo-bookmark {
+  color: white;
 }
 
 header a {
@@ -12038,6 +12044,7 @@ header a {
 
 main {
   overflow: hidden;
+  margin-top: 100px;
 }
 
 main .nav {
@@ -12086,6 +12093,14 @@ main .nav .nav-item .nav-link.active {
   z-index: -1;
 }
 
+#features {
+  margin-bottom: 50px;
+}
+
+#software {
+  margin-bottom: 100px;
+}
+
 #chrome {
   position: relative;
   top: -30px;
@@ -12099,5 +12114,15 @@ main .nav .nav-item .nav-link.active {
 #opera {
   position: relative;
   top: 70px;
+}
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-radius: 0 !important;
+}
+
+.accordion-item .accordion-button {
+  border-radius: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

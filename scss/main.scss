@@ -8,29 +8,30 @@ $enable-shadows: true;
 $nav-link-hover-color: $secondary !important;
 $nav-link-focus-color: black !important ;
 
-$accordion-border-color: rgba(255, 255, 255, 0);
-$accordion-button-active-bg: rgba(255, 255, 255, 0);
-$accordion-button-active-color: black;
-$accordion-icon-color: black;
-$accordion-icon-active-color: $secondary;
-$accordion-button-focus-border-color: rgba(255, 255, 255, 0);
-
 $nav-pills-link-active-color: black;
 $nav-pills-link-active-bg: rgba(0, 0, 0, 0);
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-* {
-  box-sizing: border-box;
-}
-
-section {
-  margin-top: 100px;
-}
-
 .btn-primary {
   @extend .bg-primary;
   @extend .text-white;
+}
+
+// Header
+.img-hero {
+  border-radius: 170px 0px 0px 170px;
+  background: #5265e1;
+  height: 60%;
+  width: 100%;
+  position: relative;
+  top: -60%;
+  right: -23%;
+  z-index: -1;
+}
+
+.logo-bookmark {
+  color: white;
 }
 
 // Feature Tabs
@@ -41,6 +42,7 @@ header a {
 
 main {
   overflow: hidden;
+  margin-top: 100px;
   .nav {
     border-bottom: 1px solid #e5e5e5;
     border-radius: 0;
@@ -91,8 +93,14 @@ main {
   bottom: 60%;
   z-index: -1;
 }
-
+#features {
+  margin-bottom: 50px;
+}
 // Extension Cards
+
+#software {
+  margin-bottom: 100px;
+}
 
 #chrome {
   position: relative;
@@ -107,4 +115,16 @@ main {
 #opera {
   position: relative;
   top: 70px;
+}
+
+// Accordion FAQ
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+  border-radius: 0 !important;
+
+  .accordion-button {
+    border-radius: 0 !important;
+  }
 }
