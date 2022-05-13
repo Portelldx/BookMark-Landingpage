@@ -11,14 +11,30 @@ $nav-link-focus-color: black !important ;
 $nav-pills-link-active-color: black;
 $nav-pills-link-active-bg: rgba(0, 0, 0, 0);
 
+$accordion-icon-width: 0.8rem;
+$accordion-button-icon: url('/img/icon-arrow.svg');
+$accordion-button-active-icon: url('/img/icon-arrow.svg');
+
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+// Buttons
 
 .btn-primary {
   @extend .bg-primary;
   @extend .text-white;
 }
 
+.btn-secondary {
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
 // Header
+
 .img-hero {
   border-radius: 170px 0px 0px 170px;
   background: #5265e1;
@@ -28,10 +44,6 @@ $nav-pills-link-active-bg: rgba(0, 0, 0, 0);
   top: -60%;
   right: -23%;
   z-index: -1;
-}
-
-.logo-bookmark {
-  color: white;
 }
 
 // Feature Tabs
@@ -93,9 +105,11 @@ main {
   bottom: 60%;
   z-index: -1;
 }
+
 #features {
   margin-bottom: 50px;
 }
+
 // Extension Cards
 
 #software {
@@ -128,3 +142,46 @@ main {
     border-radius: 0 !important;
   }
 }
+
+// Footer
+footer {
+  form {
+    .form-floating {
+      input {
+        min-width: 300px !important;
+        height: 50px !important;
+      }
+
+      .floating-label {
+        top: -4px;
+      }
+    }
+
+    button {
+      width: 300px !important;
+      height: 50px;
+
+      @include media-breakpoint-up(md) {
+        width: unset !important;
+      }
+    }
+  }
+
+  nav {
+    .container {
+      flex-direction: column !important;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row !important;
+      }
+    }
+
+    .social {
+      ul {
+        flex-direction: row !important;
+      }
+    }
+  }
+}
+
+/* -- footer end -- */

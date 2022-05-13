@@ -5373,7 +5373,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a5bcb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("/img/icon-arrow.svg");
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -5381,13 +5381,13 @@ fieldset:disabled .btn {
 .accordion-button::after {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 0.8rem;
+  height: 0.8rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("/img/icon-arrow.svg");
   background-repeat: no-repeat;
-  background-size: 1.25rem;
+  background-size: 0.8rem;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -8870,7 +8870,7 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, .btn-primary {
+.text-white, .btn-primary, .btn-secondary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -8921,7 +8921,7 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-secondary {
+.bg-secondary, .btn-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -12023,6 +12023,11 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .img-hero {
   border-radius: 170px 0px 0px 170px;
   background: #5265e1;
@@ -12032,10 +12037,6 @@ fieldset:disabled .btn {
   top: -60%;
   right: -23%;
   z-index: -1;
-}
-
-.logo-bookmark {
-  color: white;
 }
 
 header a {
@@ -12125,4 +12126,49 @@ main .nav .nav-item .nav-link.active {
 .accordion-item .accordion-button {
   border-radius: 0 !important;
 }
+
+footer form .form-floating input {
+  min-width: 300px !important;
+  height: 50px !important;
+}
+
+footer form .form-floating .floating-label {
+  top: -4px;
+}
+
+footer form button {
+  width: 300px !important;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  footer form button {
+    width: unset !important;
+  }
+}
+
+footer nav .container {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+@media (min-width: 768px) {
+  footer nav .container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+footer nav .social ul {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+/* -- footer end -- */
 /*# sourceMappingURL=main.css.map */
