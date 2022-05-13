@@ -33,4 +33,78 @@ section {
   @extend .text-white;
 }
 
-/* Feature Tabs CSS */
+// Feature Tabs
+
+header a {
+  font-weight: 500;
+}
+
+main {
+  overflow: hidden;
+  .nav {
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+  }
+}
+
+footer a {
+  font-weight: 500;
+}
+
+main {
+  .nav .nav-item .nav-link {
+    &.active {
+      color: black !important;
+      border-bottom: 3px solid #fa5959 !important;
+      border-radius: 0;
+    }
+  }
+}
+
+.nav .nav-item .nav-link {
+  color: black;
+}
+
+.line {
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+}
+
+.tab-blue {
+  border-radius: 0px 170px 170px 0px;
+  background: #5265e1;
+  height: 70%;
+  width: 100%;
+  position: relative;
+  left: -25%;
+  bottom: 70%;
+  z-index: -1;
+}
+
+.tab-blue1 {
+  border-radius: 0px 0px 170px 0px;
+  background: #5265e1;
+  height: 70%;
+  width: 120%;
+  position: relative;
+  left: -30%;
+  bottom: 60%;
+  z-index: -1;
+}
+
+// Extension Cards
+
+#chrome {
+  position: relative;
+  top: -30px;
+}
+
+#firefox {
+  position: relative;
+  top: 20px;
+}
+
+#opera {
+  position: relative;
+  top: 70px;
+}
