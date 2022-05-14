@@ -12127,27 +12127,7 @@ main .nav .nav-item .nav-link.active {
   border-radius: 0 !important;
 }
 
-footer form .form-floating input {
-  min-width: 300px !important;
-  height: 50px !important;
-}
-
-footer form .form-floating .floating-label {
-  top: -4px;
-}
-
-footer form button {
-  width: 300px !important;
-  height: 50px;
-}
-
-@media (min-width: 768px) {
-  footer form button {
-    width: unset !important;
-  }
-}
-
-footer nav .container {
+nav .container {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -12155,7 +12135,7 @@ footer nav .container {
 }
 
 @media (min-width: 768px) {
-  footer nav .container {
+  nav .container {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -12163,12 +12143,55 @@ footer nav .container {
   }
 }
 
-footer nav .social ul {
+nav .social ul {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: row !important;
           flex-direction: row !important;
 }
 
-/* -- footer end -- */
+.nav-link:hover {
+  color: #121111;
+}
+
+.bg-top {
+  background: none;
+  background-size: 20px;
+}
+
+.btn-primary:hover {
+  color: #5265e1 !important;
+  background-color: #fff !important;
+  border-color: #5265e1;
+}
+
+.btn-secondary:hover {
+  color: #fa5959 !important;
+  background-color: #fff !important;
+  border-color: #fa5959;
+}
+
+.btn-light:hover {
+  color: black !important;
+  background-color: #fff !important;
+  border-color: grey !important;
+}
+
+.btn-light {
+  background-color: #ededed !important;
+  border-color: #ededed !important;
+}
+
+.nav-toggle {
+  background: rgba(0, 0, 0, 0.387);
+}
+
+svg.icon-footer:hover path {
+  fill: #fa5959;
+  cursor: pointer;
+}
+
+#questions button:hover {
+  color: #fa5959;
+}
 /*# sourceMappingURL=main.css.map */

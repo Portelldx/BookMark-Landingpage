@@ -144,44 +144,66 @@ main {
 }
 
 // Footer
-footer {
-  form {
-    .form-floating {
-      input {
-        min-width: 300px !important;
-        height: 50px !important;
-      }
 
-      .floating-label {
-        top: -4px;
-      }
-    }
+nav {
+  .container {
+    flex-direction: column !important;
 
-    button {
-      width: 300px !important;
-      height: 50px;
-
-      @include media-breakpoint-up(md) {
-        width: unset !important;
-      }
+    @include media-breakpoint-up(md) {
+      flex-direction: row !important;
     }
   }
 
-  nav {
-    .container {
-      flex-direction: column !important;
-
-      @include media-breakpoint-up(md) {
-        flex-direction: row !important;
-      }
-    }
-
-    .social {
-      ul {
-        flex-direction: row !important;
-      }
+  .social {
+    ul {
+      flex-direction: row !important;
     }
   }
 }
 
-/* -- footer end -- */
+// butttons and hover effects
+
+.nav-link:hover {
+  color: #121111;
+}
+
+.bg-top {
+  background: none;
+  background-size: 20px;
+}
+
+.btn-primary:hover {
+  color: #5265e1 !important;
+  background-color: #fff !important;
+  border-color: #5265e1;
+}
+
+.btn-secondary:hover {
+  color: #fa5959 !important;
+  background-color: #fff !important;
+  border-color: $secondary;
+}
+
+.btn-light:hover {
+  color: rgb(0, 0, 0) !important;
+  background-color: #fff !important;
+  border-color: grey !important;
+}
+
+.btn-light {
+  background-color: rgb(237, 237, 237) !important;
+  border-color: rgb(237, 237, 237) !important;
+}
+
+.nav-toggle {
+  background: rgba(0, 0, 0, 0.387);
+}
+
+svg.icon-footer:hover path {
+  fill: $secondary;
+  cursor: pointer;
+}
+
+#questions button:hover {
+  color: $secondary;
+}
