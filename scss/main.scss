@@ -144,8 +144,7 @@ main {
 }
 
 // Footer
-
-nav {
+#footer-nav {
   .container {
     flex-direction: column !important;
 
@@ -160,7 +159,6 @@ nav {
     }
   }
 }
-
 // butttons and hover effects
 
 .nav-link:hover {

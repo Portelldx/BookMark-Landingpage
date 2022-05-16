@@ -12127,7 +12127,7 @@ main .nav .nav-item .nav-link.active {
   border-radius: 0 !important;
 }
 
-nav .container {
+#footer-nav .container {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -12135,7 +12135,7 @@ nav .container {
 }
 
 @media (min-width: 768px) {
-  nav .container {
+  #footer-nav .container {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -12143,7 +12143,7 @@ nav .container {
   }
 }
 
-nav .social ul {
+#footer-nav .social ul {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: row !important;
