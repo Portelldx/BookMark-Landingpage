@@ -12102,17 +12102,17 @@ main .nav .nav-item .nav-link.active {
   margin-bottom: 100px;
 }
 
-#chrome {
+#software > :nth-child(1) {
   position: relative;
   top: -30px;
 }
 
-#firefox {
+#software > :nth-child(1) > :nth-child(2) {
   position: relative;
   top: 20px;
 }
 
-#opera {
+#software > :nth-child(1) > :nth-child(3) {
   position: relative;
   top: 70px;
 }
