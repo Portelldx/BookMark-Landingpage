@@ -1,5 +1,5 @@
 # BookMark-Landingpage
-Landing Page exercise from Frontend Mentor done with Boostrap, SASS and Javascript
+Landing Page exercise from Frontend Mentor done with Bootstrap, SASS and Javascript
 
 ## Deployment
 
